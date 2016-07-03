@@ -24,8 +24,9 @@ import static org.junit.Assert.*;
 
 import org.json.simple.JSONArray;
 import org.junit.Test;
-import org.lorecraft.phparser.JSONTransformer;
-import org.lorecraft.phparser.SerializedPhpParser;
+import com.github.ooxi.phparser.JSONTransformer;
+import com.github.ooxi.phparser.SerializedPhpParser;
+import com.github.ooxi.phparser.SerializedPhpParserException;
 
 public class PHPSerializationTest {
 
@@ -37,7 +38,7 @@ public class PHPSerializationTest {
 	}*/
 
 	@Test
-	public void testUnserialize() {
+	public void testUnserialize() throws Exception {
 		
 	//Object obj = PHPSerializedTest.unserialize("a:6:{s:15:\"info_buyRequest\";a:5:{s:4:\"uenc\";s:76:\"aHR0cDovL2FkbS5hbHRpYy5wcm8vdmVzdGUtYm9nb2xhbi1tYXJyb24uaHRtbD9fX19TSUQ9VQ,,\";s:7:\"product\";s:4:\"2824\";s:15:\"related_product\";s:0:\"\";s:15:\"super_attribute\";a:1:{i:552;s:2:\"10\";}s:3:\"qty\";s:1:\"1\";}s:15:\"attributes_info\";a:1:{i:0;a:2:{s:5:\"label\";s:6:\"Taille\";s:5:\"value\";s:1:\"S\";}}s:11:\"simple_name\";s:22:\"Veste bogolan marron S\";s:10:\"simple_sku\";s:6:\"NDE083\";s:20:\"product_calculations\";i:1;s:13:\"shipment_type\";i:0;}");
 		
